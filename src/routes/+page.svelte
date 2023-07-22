@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Claptrap</title>
+  <meta name="description" content="Soundboard za Pritiskavec Gold" />
 </svelte:head>
 
 <section>
