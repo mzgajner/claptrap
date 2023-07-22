@@ -66,9 +66,12 @@
     position: relative;
     border-radius: 0.25rem;
     overflow: hidden;
+    color: black;
   }
   .button:disabled {
     color: black;
+    pointer-events: none;
+    cursor: default;
   }
 
   .title {
