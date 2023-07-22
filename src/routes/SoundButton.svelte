@@ -50,6 +50,7 @@
     cursor: pointer;
     appearance: none;
     position: relative;
+    border-radius: 0.25rem;
   }
   .button:disabled {
     color: black;
@@ -57,6 +58,10 @@
 
   .title {
     font-size: 1.25rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
     position: relative;
   }
@@ -77,5 +82,6 @@
     left: 0;
     z-index: 1;
     filter: brightness(90%);
+    border-radius: 0.25rem;
   }
 </style>
