@@ -11,7 +11,7 @@ You need a recent version of [Node.js](https://nodejs.org/) (works on 18).
 yarn
 
 # Start the dev server
-yarn run dev --open
+yarn dev --open
 
 # Format code with Prettier
 yarn format
@@ -24,8 +24,8 @@ yarn lint
 
 ```bash
 # Build production version
-yarn run build
+yarn build
 
 # Preview production build
-yarn run preview
+yarn preview
 ```
