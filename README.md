@@ -1,38 +1,31 @@
-# create-svelte
+# Claptrap
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Simple browser-based soundboard for use during live Pritiskavec Gold performances.
 
-## Creating a project
+## Development
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+You need a recent version of [Node.js](https://nodejs.org/) (works on 18).
 
 ```bash
-npm run dev
+# Install dependencies
+yarn
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# Start the dev server
+yarn run dev --open
+
+# Format code with Prettier
+yarn format
+
+# Run linters
+yarn lint
 ```
 
 ## Building
 
-To create a production version of your app:
-
 ```bash
-npm run build
+# Build production version
+yarn run build
+
+# Preview production build
+yarn run preview
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
