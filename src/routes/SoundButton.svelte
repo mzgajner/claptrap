@@ -7,34 +7,25 @@
   export let subtitle: string
 
   let disabled = true
-  let audio: HTMLAudioElement
   let duration = 0
   let context: AudioContext
   let buffer: AudioBuffer
+  let preloadedData: ArrayBuffer
 
-  onMount(() => {
-    context = new AudioContext()
-
-    window.fetch(path)
-      .then(response => response.arrayBuffer())
-      .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
-      .then(audioBuffer => {
-        disabled = false;
-        buffer = audioBuffer;
-      });
-
-    audio = new Audio(path)
-    audio.addEventListener('loadeddata', () => {
-      duration = audio.duration * 1000
-      disabled = false
-    })
+  onMount(async () => {
+    const response = await window.fetch(path)
+    preloadedData = await response.arrayBuffer()
+    disabled = false
   })
 
-  function playSound() {
-    const source = context.createBufferSource();
-    source.buffer = buffer;
-    source.connect(context.destination);
-    source.start();
+  async function playSound() {
+    context = new AudioContext()
+    buffer = buffer ?? await context.decodeAudioData(preloadedData)
+    duration = buffer.duration * 1000
+    const source = context.createBufferSource()
+    source.buffer = buffer
+    source.connect(context.destination)
+    source.start()
     disabled = true
     setTimeout(() => (disabled = false), duration)
   }
