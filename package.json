@@ -12,9 +12,8 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.1.0",
+    "@sveltejs/adapter-static": "^2.0.2",
     "@sveltejs/kit": "^1.22.3",
-    "@types/cookie": "^0.5.1",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
@@ -28,8 +27,5 @@
     "typescript": "^5.1.6",
     "vite": "^4.4.6"
   },
-  "type": "module",
-  "dependencies": {
-    "@sveltejs/adapter-static": "^2.0.2"
-  }
+  "type": "module"
 }
