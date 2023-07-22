@@ -65,6 +65,7 @@
     appearance: none;
     position: relative;
     border-radius: 0.25rem;
+    overflow: hidden;
   }
   .button:disabled {
     color: black;
@@ -96,6 +97,5 @@
     left: 0;
     z-index: 1;
     filter: brightness(90%);
-    border-radius: 0.25rem;
   }
 </style>
