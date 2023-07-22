@@ -9,8 +9,20 @@
   let disabled = true
   let audio: HTMLAudioElement
   let duration = 0
+  let context: AudioContext
+  let buffer: AudioBuffer
 
   onMount(() => {
+    context = new AudioContext()
+
+    window.fetch(path)
+      .then(response => response.arrayBuffer())
+      .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
+      .then(audioBuffer => {
+        disabled = false;
+        buffer = audioBuffer;
+      });
+
     audio = new Audio(path)
     audio.addEventListener('loadeddata', () => {
       duration = audio.duration * 1000
@@ -19,9 +31,12 @@
   })
 
   function playSound() {
-    audio.play()
+    const source = context.createBufferSource();
+    source.buffer = buffer;
+    source.connect(context.destination);
+    source.start();
     disabled = true
-    setTimeout(() => (disabled = false), duration + 250)
+    setTimeout(() => (disabled = false), duration)
   }
 
   function animateProgress(node: HTMLElement, { duration }: TransitionConfig) {
