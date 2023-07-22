@@ -14,7 +14,6 @@
     audio = new Audio(path)
     audio.addEventListener('loadeddata', () => {
       duration = audio.duration * 1000
-      console.log(duration)
       disabled = false
     })
   })
