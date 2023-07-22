@@ -60,6 +60,16 @@ export default [
     subtitle: 'Counter-Strike',
   },
   {
+    path: 'sounds/humiliation.mp3',
+    title: 'Humiliation',
+    subtitle: 'Quake 3 Arena',
+  },
+  {
+    path: 'sounds/impressive.mp3',
+    title: 'Impressive',
+    subtitle: 'Quake 3 Arena',
+  },
+  {
     path: 'sounds/enemy-flag.mp3',
     title: 'The enemy has your flag',
     subtitle: 'Quake 3 Arena',
@@ -90,6 +100,11 @@ export default [
     subtitle: 'Metal Gear Solid',
   },
   {
+    path: 'sounds/doom-shotgun.mp3',
+    title: 'Shotgun',
+    subtitle: 'Doom',
+  },
+  {
     path: 'sounds/mario-coin.mp3',
     title: 'Coin',
     subtitle: 'Super Mario Bros.',
@@ -97,6 +112,11 @@ export default [
   {
     path: 'sounds/mario-jump.mp3',
     title: 'Jump',
+    subtitle: 'Super Mario Bros.',
+  },
+  {
+    path: 'sounds/mario-power-up.mp3',
+    title: 'Power up',
     subtitle: 'Super Mario Bros.',
   },
   {
@@ -118,6 +138,21 @@ export default [
     path: 'sounds/fatality.mp3',
     title: 'Fatality',
     subtitle: 'Mortal Kombat',
+  },
+  {
+    path: 'sounds/worms-laugh.mp3',
+    title: 'Laugh',
+    subtitle: 'Worms 2',
+  },
+  {
+    path: 'sounds/patients-corridors.mp3',
+    title: 'Patients are reminded not to die in the corridors',
+    subtitle: 'Theme Hospital',
+  },
+  {
+    path: 'sounds/hospital-administrator-is-cheating.mp3',
+    title: 'Hospital administrator is cheating',
+    subtitle: 'Theme Hospital',
   },
   {
     path: 'sounds/desa-reakcije.mp3',
