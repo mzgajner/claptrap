@@ -51,7 +51,7 @@ export default [
   },
   {
     path: 'sounds/construct-pylons.mp3',
-    title: 'Construct Pylons',
+    title: 'You must construct additional pylons',
     subtitle: 'Starcraft',
   },
   {
