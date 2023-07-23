@@ -65,6 +65,26 @@ export default [
     subtitle: 'Pac-Man',
   },
   {
+    path: 'sounds/glados-once-again.mp3',
+    title: 'Once again, excellent work',
+    subtitle: 'Portal',
+  },
+  {
+    path: 'sounds/glados-quit-now.mp3',
+    title: 'Quit now and cake will be served immediately',
+    subtitle: 'Portal',
+  },
+  {
+    path: 'sounds/glados-very-well.mp3',
+    title: 'You’re doing very well',
+    subtitle: 'Portal',
+  },
+  {
+    path: 'sounds/glados-regret.mp3',
+    title: 'Look, we both said a lot of things',
+    subtitle: 'Portal 2',
+  },
+  {
     path: 'sounds/boomheadshot.mp3',
     title: 'Boom! Headshot!',
     subtitle: 'Pure Pwnage',
