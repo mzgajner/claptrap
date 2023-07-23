@@ -58,6 +58,9 @@
     border-radius: 0.25rem;
     overflow: hidden;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .button:disabled {
     color: black;
@@ -68,18 +71,19 @@
   .title {
     font-size: 1.25rem;
     line-height: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 2;
     position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   .subtitle {
-    font-size: 0.75rem;
+    font-size: 0.888rem;
     margin-top: 0.5rem;
     z-index: 2;
     position: relative;
+    opacity: 0.5;
   }
 
   .progress-background {
