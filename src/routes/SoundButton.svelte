@@ -20,7 +20,7 @@
 
   async function playSound() {
     context = new AudioContext()
-    buffer = buffer ?? await context.decodeAudioData(preloadedData)
+    buffer = buffer ?? (await context.decodeAudioData(preloadedData))
     duration = buffer.duration * 1000
     const source = context.createBufferSource()
     source.buffer = buffer
