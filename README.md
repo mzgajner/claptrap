@@ -4,28 +4,28 @@ Simple browser-based soundboard for use during live Pritiskavec Gold performance
 
 ## Development
 
-You need a recent version of [Node.js](https://nodejs.org/) (works on 18).
+You need a recent version of [Bun](https://bun.sh/) (last tested on 1.1.15).
 
 ```bash
 # Install dependencies
-yarn
+bun
 
 # Start the dev server
-yarn dev --open
+bun dev --open
 
 # Format code with Prettier
-yarn format
+bun format
 
 # Run linters
-yarn lint
+bun lint
 ```
 
 ## Building
 
 ```bash
 # Build production version
-yarn build
+bun run build
 
 # Preview production build
-yarn preview
+bun preview
 ```
