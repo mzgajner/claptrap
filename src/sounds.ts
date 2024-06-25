@@ -1,5 +1,40 @@
 export default [
   {
+    path: 'sounds/ubicu-te.mp3',
+    title: 'Ubiću te',
+    subtitle: 'Antičefur 3D',
+  },
+  {
+    path: 'sounds/osvobodilna-slovenska-armada.mp3',
+    title: 'Osvobodilna slovenska armada',
+    subtitle: 'Antičefur 3D',
+  },
+  {
+    path: 'sounds/kolaz-efektov.mp3',
+    title: 'Kolaž efektov',
+    subtitle: 'Antičefur 3D',
+  },
+  {
+    path: 'sounds/dje-si-slovenac.mp3',
+    title: 'Đe si, slovenac',
+    subtitle: 'Antičefur 3D',
+  },
+  {
+    path: 'sounds/daj-pare.mp3',
+    title: 'Daj pare',
+    subtitle: 'Antičefur 3D',
+  },
+  {
+    path: 'sounds/cefurji-v-vesolju.mp3',
+    title: 'Čefurji v vesolju',
+    subtitle: 'Antičefur 3D',
+  },
+  {
+    path: 'sounds/cas-ja-da-tej-cefurjadi-nardimo-konc.mp3',
+    title: 'Čas je da tej čefurjadi nardimo konc',
+    subtitle: 'Antičefur 3D',
+  },
+  {
     path: 'sounds/wololo.mp3',
     title: 'Wololo',
     subtitle: 'Age of Empires',
