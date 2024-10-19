@@ -40,7 +40,7 @@
 
 <button class="button" on:click={playSound} {disabled}>
   {#if disabled}
-    <div class="progress-background" in:animateProgress={{ duration }} />
+    <div class="progress-background" in:animateProgress={{ duration }}></div>
   {/if}
   <div class="title">{title}</div>
   <div class="subtitle">{subtitle}</div>

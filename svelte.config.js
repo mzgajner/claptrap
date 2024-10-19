@@ -22,7 +22,7 @@ const config = {
     }),
     paths: {
       relative: false,
-    }
+    },
   },
 }
 
