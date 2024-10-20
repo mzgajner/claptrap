@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Generate `sounds.json`` from files in `public/sounds``
+      - name: Generate `sounds.json` from files in `public/sounds`
         run: bun run generate
 
       - name: Build

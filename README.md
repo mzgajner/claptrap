@@ -1,39 +1,34 @@
-# claptrap2
+# Claptrap
 
-This template should help get you started developing with Vue 3 in Vite.
+Simple browser-based soundboard for use during live Pritiskavec Gold performances.
 
-## Recommended IDE Setup
+## Development
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+You need a recent version of [Bun](https://bun.sh/) (last tested on 1.1.31).
 
-## Type Support for `.vue` Imports in TS
+```bash
+# Install dependencies
+bun
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+# Start the dev server
+bun dev --open
 
-## Customize configuration
+# Format code with Prettier
+bun format
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-bun install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-bun dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-bun build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+# Run linters
 bun lint
+```
+
+## Building
+
+```bash
+# Generate `sounds.json` from files in `public/sounds`
+bun run build
+
+# Build production version
+bun run build
+
+# Preview production build
+bun preview
 ```
