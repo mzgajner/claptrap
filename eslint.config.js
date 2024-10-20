@@ -1,33 +1,19 @@
-import svelte from 'eslint-plugin-svelte'
-import prettier from 'eslint-config-prettier'
-import ts from 'typescript-eslint'
-import eslint from '@eslint/js'
-import globals from 'globals'
+import pluginVue from 'eslint-plugin-vue'
+import vueTsEslintConfig from '@vue/eslint-config-typescript'
+import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  eslint.configs.recommended,
-  ...ts.configs.recommended,
-  ...svelte.configs['flat/recommended'],
-  prettier,
-  ...svelte.configs['flat/prettier'],
   {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
+    name: 'app/files-to-lint',
+    files: ['**/*.{ts,mts,tsx,vue}'],
   },
+
   {
-    files: ['**/*.svelte'],
-    languageOptions: {
-      parserOptions: {
-        parser: ts.parser,
-      },
-    },
+    name: 'app/files-to-ignore',
+    ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
   },
-  {
-    ignores: ['build/', '.svelte-kit/', 'dist/'],
-  },
+
+  ...pluginVue.configs['flat/essential'],
+  ...vueTsEslintConfig(),
+  skipFormatting,
 ]
